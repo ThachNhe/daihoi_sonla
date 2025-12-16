@@ -1,0 +1,29 @@
+﻿.seating-section {
+    display: flex;
+    padding: 0px 300px;
+    justify-content: center;
+    align-items: center;
+}
+    .seating-section img {
+        width: 100%;
+        box-shadow: 0 4px 12px rgba(4, 10, 10, 0.09); /* 👈 bóng nhẹ, tự nhiên */
+    }
+
+/* Responsive */
+@media (max-width: 1200px) {
+
+    .seating-section {
+        padding: 0px 120px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .seating-section {
+        padding: 0px 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    
+}

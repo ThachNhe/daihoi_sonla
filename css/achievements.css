@@ -1,0 +1,111 @@
+﻿.icon_120{
+    width: 120px;
+    height: 120px;
+}
+.achievements-card-list {
+    display: flex;
+    width: 100%;
+    padding: 0px 300px;
+    justify-content: center;
+    align-items: stretch;
+    gap: 40px;
+}
+
+.achievements-card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-main-10);
+    flex: 1;
+    padding: 40px 16px;
+    gap: 40px;
+    border-radius: 16px;
+}
+    .achievements-card-content:hover {
+        background: var(--color-main-40);
+    }
+.achievements-card-content p {
+    text-align: center;
+}
+
+.reportage-card-list {
+    display: flex;
+    width: 100%;
+    padding: 0px 300px;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+}
+.reportage-card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex: 1;
+    gap: 16px;
+    flex: 0 0 calc(33.33% - 16px);
+}
+.video-wrapper {
+    position: absolute;
+    width: 100%;
+    flex: 1;
+}
+
+    .video-wrapper iframe {
+        position: flex;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+    }
+
+/* Responsive */
+@media (max-width: 1200px) {
+
+    .achievements-card-list {
+        padding: 0px 120px;
+        flex-wrap: wrap;
+    }
+
+    .reportage-card-list {
+        padding: 0px 120px;
+    }
+    .achievements-card-content {
+        flex: 0 0 calc(50% - 24px);
+    }
+    .reportage-card-content {
+        flex: 0 0 calc(50% - 16px);
+    }
+
+@media (max-width: 768px) {
+
+    .achievements-card-list {
+        padding: 0px 40px;
+       
+    }
+
+    .reportage-card-list {
+        padding: 0px 40px;
+        flex-direction: column;
+    }
+    .reportage-card-content {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .achievements-card-list {
+        padding: 0 40px;
+        flex-direction:column;
+    }
+    .achievements-card-content {
+        flex: 1;
+        width: 100%;
+    }
+}

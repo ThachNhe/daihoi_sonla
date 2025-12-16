@@ -1,0 +1,106 @@
+﻿
+.info-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 40px;
+    padding: 0px 300px;
+    justify-content:center;
+}
+
+.sub-tab-item {
+    color: var(--color-text-main);
+    transition: all 0.2s ease;
+    padding: 8px 20px;
+    background: var(--color-neutral6);
+    border-radius: 8px;
+}
+
+    .sub-tab-item:hover {
+        color: var(--color-neutral3);
+    }
+
+    /* --- Tab được chọn --- */
+    .sub-tab-item.active {
+        color: var(--color-white);
+        background: var(--color-main);
+    }
+
+.info-content {
+    color: var(--color-text-main);
+    padding: 0px 300px;
+    gap: 4px;
+}
+
+.logistics-content-list{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 300px;
+    gap: 40px;
+}
+.logistics-content-img{
+    width: 100%;
+}
+
+.logistics-content-card {
+    display: flex;
+    border: 1px solid var(--color-neutral3); /* thêm border */
+    gap: 20px;
+    padding: 20px;
+    border-radius: 16px;
+    flex-direction: column;
+}
+
+.logistics-content-name{
+    display: flex;
+    gap: 8px;
+    padding: 12px;
+    justify-content:center;
+    align-items: center;
+    background: var(--color-main-10);
+    width: 100%
+}
+
+.infor-card {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 16px;
+    padding: 20px;
+    border: 1px solid var(--color-neutral3); /* thêm border */
+    border-radius: 16px;
+    flex: 0 0 calc(20% - 24px);
+    box-sizing: border-box;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+    .info-content
+    {
+        padding: 0px 120px;
+    }
+    .info-tabs {
+        padding: 0px 120px;
+    
+    }
+    .logistics-content-list {
+        padding: 0px 120px;
+    }
+}
+@media (max-width: 768px) {
+
+    .info-content {
+        padding: 0px 40px;
+    }
+    .info-tabs {
+        padding: 0px 40px;
+    }
+    .logistics-content-list {
+        padding: 0px 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    
+}

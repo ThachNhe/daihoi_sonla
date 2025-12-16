@@ -1,0 +1,156 @@
+﻿
+.document-card-list {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 24px;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 0px 300px;
+}
+
+.document-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 16px;
+    padding: 20px;
+    margin: 0px;
+    border: 1px solid var(--color-neutral6); /* thêm border */
+    border-radius: 16px;
+    flex: 0 0 calc(50% - 24px);
+    box-sizing: border-box;
+}
+
+.document-card-title {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+}
+
+    .document-card-title p{
+        flex:1;
+    }
+
+    .document-card-title img {
+        width: 50px;
+        height: 50px;
+    }
+
+.document-card-file {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    width: 100%;
+    background-color: var(--color-main-10);
+    border-radius: 8px;
+}
+
+.document-card-filename{
+    display: flex;
+    gap: 12px;
+    flex: 1;
+    align-items: center;
+}
+.document-card-icon{
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+}
+.icon_24 {
+    width: 24px;
+    height: 24px;
+}
+
+.discussion-card-list {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 24px;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 0 300px;
+}
+
+.discussion-card {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 16px;
+    padding: 20px;
+    border: 1px solid var(--color-neutral3); /* thêm border */
+    border-radius: 16px;
+    flex: 0 0 calc(33.333% - 24px);
+    box-sizing: border-box;
+}
+
+    
+.discussion-card-img {
+    display: flex;
+    width: 100%;
+}
+    .discussion-card-img img {
+        width: 100%; /* ép ảnh co theo chiều ngang của div cha */
+        height: auto; /* giữ nguyên tỉ lệ ảnh */
+        display: flex; /* bỏ khoảng trắng dưới ảnh */
+        object-fit: cover; /* (tùy chọn) cắt ảnh nếu cần vừa khít khung */
+    }
+.discussion-card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 16px;
+}
+.discussion-card-name {
+    width: 100%;
+    flex: 1;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 6; /* số dòng tối đa */
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+}
+.discussion-card-name:hover {
+    color: var(--color-main);
+}
+
+.discussion-card-author {
+    width: 100%;
+    flex: 0;
+}
+.view-btn {
+    cursor: pointer;
+}
+/* Responsive */
+@media (max-width: 1200px) {
+    .document-card-list {
+        padding: 0px 120px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .document-card-list {
+        padding: 0px 40px;
+        flex-direction: column;
+    }
+    .document-card {
+        flex:1;
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .document-card-list {
+        padding: 0px 40px;
+    }
+}

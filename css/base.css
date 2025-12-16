@@ -1,0 +1,190 @@
+﻿/*Import font Inter từ Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* 2️⃣ Reset cơ bản */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Thiết lập font và màu nền tổng thể */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    line-height: 1.6;
+}
+
+/* 4️⃣ Định nghĩa bảng màu chính */
+:root {
+    --color-main: #288ACC;
+    --color-main-10: #EAF4FA;
+    --color-main-20: #D4E8F5;
+    --color-main-40: #A9D0EB;
+    --color-main-60: #7EB9E0;
+    --color-main-80: #53A1D6;
+    --color-text-main: #00173D;
+    --color-white: #FFFFFF;
+    --color-bg: #FFFFFF;
+    --color-neutral1: #1A2E51;
+    --color-neutral2: #334664;
+    --color-neutral3: #66748B;
+    --color-neutral4: #99A2B1;
+    --color-neutral5: #CCD1D8;
+    --color-neutral6: #E5E8EC;
+    --color-neutral7: #F2F3F5;
+    --color-neutral8: #F7F8F9;
+    --color-red: #DC0A15;
+    --color-yellow: #FFB814;
+    --color-green: #00AA13;
+}
+
+/* 5️⃣ Class tiện dụng */
+.text-16-regular {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.text-16-medium {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.text-16-semibold {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.text-16-bold {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.text-14-regular {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.text-14-medium {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.text-14-semibold {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+.text-14-bold {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+.text-12-regular {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.text-12-medium {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+}
+
+.text-12-semibold {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+}
+
+.text-12-bold {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 16px;
+}
+
+.text-18-regular {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.text-18-medium {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+}
+
+.text-18-semibold {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+}
+
+.text-18-bold {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.text-20-medium {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+}
+
+.text-20-semibold {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+}
+
+.text-20-bold {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.text-24-semibold {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+}
+
+.text-24-bold {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+}
+
+.text-28-semibold {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 40px;
+}
+
+.text-28-bold {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 40px;
+}
+
+.text-32-bold {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 44px;
+}
+
+.bg-primary {
+    background-color: var(--color-bg);
+}

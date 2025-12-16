@@ -1,0 +1,30 @@
+﻿.vote-content{
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 300px;
+}
+.vote-content img{
+    width: 50%;
+    height: auto;
+    
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+    .vote-content {
+        padding: 0px 120px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .vote-content {
+        padding: 0px 40px;
+    }
+}
+
+@media (max-width: 480px) {
+}
