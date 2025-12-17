@@ -35,20 +35,24 @@
     background-position: top; /* căn giữa ảnh */
     background-repeat: no-repeat; /* không lặp lại ảnh */
     width: 100%;
+    max-width: 300px;
 }
 
 .delegates-card-img {
     display: flex;
     width: 100%;
     justify-content: center;
+    min-height: 180px; /* Thêm chiều cao tối thiểu */
 }
 
     .delegates-card-img img {
-        width: 100%; /* ép ảnh co theo chiều ngang của div cha */
-        height: auto; /* giữ nguyên tỉ lệ ảnh */
-        display: flex; /* bỏ khoảng trắng dưới ảnh */
-        object-fit: cover; /* (tùy chọn) cắt ảnh nếu cần vừa khít khung */
+        width: 166px; /* Tăng từ 120px lên 150px */
+        height: 220.5px; /* Tăng từ 150px lên 187.5px để giữ tỉ lệ */
+        display: flex;
+        object-fit: cover;
+        border-radius: 8px;
     }
+
 
 .delegates-card-content {
     display: flex;
@@ -56,7 +60,7 @@
     justify-content: space-between;
     align-items: flex-start;
     width: 100%;
-    gap: 16px;
+    gap: 5px;
 }
 
 .delegates-card-divider {
@@ -64,6 +68,7 @@
     height: 2px;
     background-color: var(--color-white); /* hoặc chọn màu khác nếu muốn */
     border-radius: 2px;
+    margin: 5px 0;
 }
 
 .delegates-card-name {
@@ -211,29 +216,31 @@
 .profile-card-img {
     display: flex;
     width: auto;
-    height: 224px;
+    justify-content: center;
+    height: auto; /* Thay đổi từ 224px */
 }
 
     .profile-card-img img {
-        width: 100%; /* ép ảnh co theo chiều ngang của div cha */
-        height: auto; /* giữ nguyên tỉ lệ ảnh */
-        display: flex; /* bỏ khoảng trắng dưới ảnh */
-        object-fit: cover; /* (tùy chọn) cắt ảnh nếu cần vừa khít khung */
+    width: 700px !important;
+    height: 900px !important;
+        display: flex;
+        object-fit: cover;
+        border-radius: 8px;
     }
 .profile-content-infor {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 20px; /* Tăng từ 16px lên 20px */
     justify-content: center;
     align-items: center;
     height: auto;
-    width: 300px;
-    padding: 40px;
+    /* width: 420px; Tăng từ 360px lên 420px */
+    padding: 50px; /* Tăng từ 40px lên 50px */
     border-radius: 8px;
-    background-image: url('../images/delegate.png'); /* đường dẫn đến ảnh */
-    background-size: cover; /* tự động co ảnh vừa khung */
-    background-position: bottom; /* căn giữa ảnh */
-    background-repeat: no-repeat; /* không lặp lại ảnh */
+    background-image: url('../images/delegate.png');
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
 }
     .profile-content-infor p{
         text-align: center;
@@ -317,6 +324,17 @@
     .profile-content {
         padding: 0px 40px;
     }
+    
+    .profile-card-img img {
+        width: 220px !important;
+        height: 275px !important;
+    }
+    
+    .profile-content-infor {
+        width: 100%;
+        max-width: 380px;
+        padding: 40px;
+    }
 }
 @media (max-width: 550px) {
     .delegates-card-list {
@@ -345,5 +363,15 @@
         width: 100%;
         flex-wrap: wrap;
         padding: 0px 40px;
+    }
+    
+    .profile-card-img img {
+        width: 200px !important;
+        height: 250px !important;
+    }
+    
+    .profile-content-infor {
+        width: 100%;
+        padding: 30px;
     }
 }
