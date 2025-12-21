@@ -281,16 +281,23 @@
 
     <script>
         // Khi click vào icon 👁
-        document.querySelectorAll(".view-btn").forEach(btn => {
-            btn.addEventListener("click", function () {
-                const file = this.dataset.file;
+    document.querySelectorAll(".view-btn").forEach(btn => {
+        btn.addEventListener("click", function () {
+            const file = this.dataset.file;
+            const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+            
+            if (isMobile) {
+                // Sử dụng Google Docs Viewer cho mobile
+                const googleDocsUrl = `https://docs.google.com/viewer?url=${encodeURIComponent(window.location.origin + '/' + file)}&embedded=true`;
+                window.open(googleDocsUrl, '_blank');
+            } else {
                 const modal = document.getElementById("pdfModal");
                 const iframe = document.getElementById("pdfFrame");
-
-                iframe.src = file; // gán link file PDF
-                modal.style.display = "flex"; // hiện modal
-            });
+                iframe.src = file;
+                modal.style.display = "flex";
+            }
         });
+    });
 
         // Nút đóng modal
         document.getElementById("closeModal").addEventListener("click", function () {
